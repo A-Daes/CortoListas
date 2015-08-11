@@ -12,5 +12,6 @@ public abstract class Nodo{
     public abstract Nodo getSiguiente();
     public abstract int getValor();
     public abstract String toString();
-    public abstract setValor(<E>Valor);
+    public abstract void setValor(<E>Valor);
+    public abstract <E> getValor();
 }
