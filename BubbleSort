@@ -1,12 +1,3 @@
-//Bubble Sort
-//Grupo 6
-//Diego Valdez
-//Estuardo Ramirez
-//Diego Regalado
-//Patrick Ordoñez
-
-
-
 public class BubbleSort implements Comparable<Sort> {
 	
 	private int firstInt;
