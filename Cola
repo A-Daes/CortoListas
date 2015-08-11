@@ -1,0 +1,76 @@
+/*
+Universidad del Valle De Guatemala 
+Fecha: 8/5/2015
+Pablo Andrés Barreno Koch 14159
+Santiago Solorzano 14619
+Juan Luis Garcia 14189 
+*/
+
+public class Cola<E> extends INodo<E> {
+	// Parametros
+	private boolean Empty;
+	private Nodo Cabeza;
+	private Nodo Actual;
+	
+	// Constructor
+	public Cola() {
+		this.Empty = true;
+		Cabeza = null;
+		Actual = Cabeza;
+	}
+	
+	// Getters y Setters
+	public boolean isEmpty() {
+		return Empty;
+	}
+
+	public void setEmpty(boolean empty) {
+		Empty = empty;
+	}
+
+	public Nodo getCabeza() {
+		return Cabeza;
+	}
+
+	public void setCabeza(Nodo cabeza) {
+		Cabeza = cabeza;
+	}
+
+	public Nodo getActual() {
+		return Actual;
+	}
+
+	public void setActual(Nodo actual) {
+		Actual = actual;
+	}
+
+	public void Push(int valor){ // Metodo para meter valores en la cola
+		if(Empty){
+			Cabeza = new Nodo(valor);
+			Actual = Cabeza;
+			Empty = false;
+			return;
+		}
+		
+			Nodo newNodo = new Nodo(valor);
+			Actual.setSiguiente(newNodo);
+			Actual = newNodo;
+	}
+
+	public int Pop(){ // Metodo para sacar valores de la cola
+		if(Empty){
+			return -1;
+		}
+		if(Cabeza.getSiguiente()==null){
+			int regreso = Cabeza.getValor();
+			Empty=true;
+			Cabeza = null;
+			Actual = Cabeza;
+			return regreso;
+		}
+		int regreso = Cabeza.getValor();
+		Cabeza = Cabeza.getSiguiente();
+		return regreso;
+	}
+	
+}
