@@ -28,10 +28,10 @@ public void Push(<E> valor){ // Metodo para meter valores en la cola
 		return regreso;
 	}
 	
-	public Nodo Swap(Nodo nodo, ){
+	public Nodo Swap(Nodo nodo1, Nodo nodo2){
 		Nodo temp;
-		temp = data[i];
-		data[i] = data[j];
-		data[j] = temp;
+		temp = nodo1;
+		nodo1 = nodo2;
+		nodo2 = temp;
 	}
 }
