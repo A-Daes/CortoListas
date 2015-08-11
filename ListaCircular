@@ -5,7 +5,7 @@ Pablo Andrés Barreno Koch 14159
 Santiago Solorzano 14619
 Juan Luis Garcia 14189 
 */
-public class  ListaCircular<E> extends INodo<E>{
+public class  ListaCircular<E> extends ListaDoblementeEnlazada<E>{
     
     class Nodo {
         int info;
