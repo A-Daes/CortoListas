@@ -1,12 +1,5 @@
-/*
-Universidad del Valle De Guatemala 
-Fecha: 8/5/2015
-Pablo Andrés Barreno Koch 14159
-Santiago Solorzano 14619
-Juan Luis Garcia 14189 
-*/
 
-public class ListaDoblementeEnlazada<E> extends INodo<E> {
+public class ListaDoblementeEnlazada<E> extends Cola<E> {
     Nodo cabeza;
     Nodo fin;
 
