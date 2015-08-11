@@ -27,4 +27,11 @@ public void Push(int valor){ // Metodo para meter valores en la cola
 		Cabeza = Cabeza.getSiguiente();
 		return regreso;
 	}
+	
+	public Nodo Swap(Nodo nodo, ){
+		Nodo temp;
+		temp = data[i];
+		data[i] = data[j];
+		data[j] = temp;
+	}
 }
