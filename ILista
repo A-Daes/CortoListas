@@ -1,5 +1,5 @@
 public class ILista{
-public void Push(int valor){ // Metodo para meter valores en la cola
+public void Push(<E> valor){ // Metodo para meter valores en la cola
 		if(Empty){
 			Cabeza = new Nodo(valor);
 			Actual = Cabeza;
