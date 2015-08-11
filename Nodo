@@ -1,12 +1,23 @@
-public abstract class Nodo<E>{
+public abstract class Nodo<E implements Comparable>{
 
     <E> Valor;
     Nodo Siguiente;           
     
-    public abstract void setSiguiente(Nodo nodo);
-    public abstract Nodo getSiguiente();
-    public abstract int getValor();
-    public abstract String toString();
-    public abstract void setValor(<E>Valor);
-    public <E> getValor();
+    public abstract void setSiguiente(Nodo<E> nodo){
+        Siguiente = nodo;
+        }
+    public abstract Nodo<E> getSiguiente(){
+        return Siguiente;
+        }
+    public abstract <E> getValor(){
+        return Valor;
+        }
+    public abstract void setValor(Valor){
+        this.Valor = Valor;
+        }
+    public abstract String toString(){
+        }
+    
+    public int compareTo(Nodo<E> other) {
+		return Valor.compareTo(other);
 }
