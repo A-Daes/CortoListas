@@ -1,12 +1,12 @@
-public class <E> Nodo{
+public abstract class Nodo<E>{
 
     <E> Valor;
     Nodo Siguiente;           
     
-    public void setSiguiente(Nodo nodo);
-    public Nodo getSiguiente();
-    public int getValor();
-    public String toString();
-    public void setValor(<E>Valor);
+    public abstract void setSiguiente(Nodo nodo);
+    public abstract Nodo getSiguiente();
+    public abstract int getValor();
+    public abstract String toString();
+    public abstract void setValor(<E>Valor);
     public <E> getValor();
 }
