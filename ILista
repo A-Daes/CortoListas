@@ -27,3 +27,4 @@ public void Push(int valor){ // Metodo para meter valores en la cola
 		Cabeza = Cabeza.getSiguiente();
 		return regreso;
 	}
+}
