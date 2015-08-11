@@ -3,7 +3,7 @@
  * @author OscarIvan
  */
 
-public abstract class Nodo{
+public abstract class <E> Nodo{
 
     int Valor;
     Nodo Siguiente;           
