@@ -1,4 +1,5 @@
-
+/*Modificado por Diego Alvarez
+*/
 public class ListaDoblementeEnlazada<E> extends Cola<E> {
     Nodo cabeza;
     Nodo fin;
@@ -20,13 +21,13 @@ public class ListaDoblementeEnlazada<E> extends Cola<E> {
 
     //enlaza dos nodos mediante enlace doble
     private void enlazar(Nodo nodoA, Nodo nodoB) {
-        nodoA.siguiente = nodoB;
-        nodoB.anterior = nodoA;
+        nodoA.Siguiente = nodoB;
+        nodoB.Anterior = nodoA;
     }
 
     //inserta un nuevo nodo al inicio de la lista
-    public void insertarInicio(int ndato) {
-        Nodo nuevo = new Nodo(ndato);
+    public void insertarInicio(E ndato) {
+        NodoSimple nuevo = new NodoSimple(ndato);
         if ( estaVacia() ) {
             cabeza = nuevo;
             fin = nuevo;
@@ -38,7 +39,7 @@ public class ListaDoblementeEnlazada<E> extends Cola<E> {
 
     //inserta un nuevo nodo al final de la lista
     public void insertarFinal(int ndato) {
-        Nodo nuevo = new Nodo(ndato);
+        Nodo nuevo = new Nodo(ndato) {};
         if ( estaVacia() ) {
             cabeza = nuevo;
             fin = nuevo;
