@@ -4,12 +4,12 @@ public class BubbleSort <E> implements Comparable<E> {
 	private E firstInt;
 	private	E secondInt;
 	
-	public Sort() {
+	public SubbleSort() {
 		this.firstInt = 0;
 		this.secondInt = 0;
 	}
 
-	public E compareTo(Sort other) {
+	public E compareTo(E other) {
 		E  comparison = 0;
 		if (firstInt==secondInt) comparison = 0;
 		else if(firstInt < secondInt) comparison = -1;
