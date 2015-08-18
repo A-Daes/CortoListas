@@ -9,7 +9,7 @@ public class BubbleSort <E> implements Comparable<E> {
 		this.secondInt = 0;
 	}
 
-	public E compareTo(E other) {
+	public int compareTo(E other) {
 		E  comparison = 0;
 		if (firstInt==secondInt) comparison = 0;
 		else if(firstInt < secondInt) comparison = -1;
