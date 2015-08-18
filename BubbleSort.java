@@ -1,25 +1,26 @@
-public class BubbleSort implements Comparable<Sort> {
+ // Modificado Por: Grupo 2 y Grupo 6? Seccion 21?
+public class BubbleSort <E> implements Comparable<E> {
 	
-	private int firstInt;
-	private	int secondInt;
+	private E firstInt;
+	private	E secondInt;
 	
 	public Sort() {
 		this.firstInt = 0;
 		this.secondInt = 0;
 	}
 
-	public int compareTo(Sort other) {
-		int  comparison = 0;
+	public E compareTo(Sort other) {
+		E  comparison = 0;
 		if (firstInt==secondInt) comparison = 0;
 		else if(firstInt < secondInt) comparison = -1;
 		else if(firstInt > secondInt) comparison = 1;
 		return comparison;
 	}
 	
-	public int[] BubbleSort(int[] arrayToSort){
-		int j;
+	public E[] BubbleSort(E[] arrayToSort){
+		E j;
 		boolean flag = true;   // set flag to true to begin first pass
-		int temp;   //holding variable
+		E temp;   //holding variable
 		Sort actualSort = new Sort();
 
 		while ( flag ){
