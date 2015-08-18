@@ -1,4 +1,4 @@
- // Modificado Por: Grupo 2 y Grupo 6? Seccion 21?
+
 public class BubbleSort <E> implements Comparable<E> {
 	
 	private E firstInt;
